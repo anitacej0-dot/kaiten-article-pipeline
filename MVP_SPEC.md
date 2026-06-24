@@ -116,8 +116,8 @@ kaiten-article-pipeline/
 
 1. ✅ **Vale `styles/Kaiten/`** — 8 правил + `.vale.ini` созданы (нужна установка Vale для запуска).
 2. ✅ **Рубрика в `templates/ai_review.md`** — 11 критериев, 3 слоя, формат отчёта.
-3. **`CLAUDE.md`** — корневая инструкция: принципы, как агент ходит по этапам и gate'ам.
-4. **Навык `make-brief`** — закрывает слабые ТЗ (сборка из базы знаний).
+3. ✅ **`CLAUDE.md`** — корневая инструкция: принципы, этапы, gate'ы, как запускать.
+4. ✅ **Навык `make-brief`** — сборка ТЗ из базы знаний (закрывает слабые ТЗ).
 5. **Навык `research-article`** — закрывает отсутствие research-этапа.
 6. **Навыки `build-outline`, `ai-pre-review`, `package-for-cms`**.
 7. **Новые knowledge-файлы** (`target-keywords`, `internal-links-map`) + дополнение `seo_policy`.
