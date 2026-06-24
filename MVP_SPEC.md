@@ -120,7 +120,7 @@ kaiten-article-pipeline/
 4. ✅ **Навык `make-brief`** — сборка ТЗ из базы знаний (закрывает слабые ТЗ).
 5. ✅ **Навык `research-article`** — research-этап с артефактом.
 6. ✅ **Навыки `build-outline`, `ai-pre-review`, `package-for-cms`** — слой `skills/` собран (5 навыков).
-7. **Новые knowledge-файлы** (`target-keywords`, `internal-links-map`) + дополнение `seo_policy`.
+7. ✅ **Новые knowledge-файлы** (`target-keywords`, `internal-links-map`) + дополнение `seo_policy` (Баден-Баден, нейроответы, GEO-усилители).
 8. **Пилот:** 5–10 типовых SEO-статей с большой ручной редактурой, замер метрик.
 
 ## 11. Открытые вопросы
