@@ -1,0 +1,10 @@
+extends: substitution
+message: "Терминология Agile: «%s» → «%s» (редполитика)."
+level: error
+ignorecase: true
+action:
+  name: replace
+swap:
+  '(Эджайл|Аджайл)': Agile
+  'Scrum-метод': Scrum-фреймворк
+  'Канбан-фреймворк': Канбан-метод

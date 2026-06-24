@@ -1,0 +1,6 @@
+extends: metric
+message: "Средняя длина предложения выше 15 слов — упростите (редполитика, инфостиль)."
+level: warning
+formula: |
+  (words / sentences)
+condition: "> 15"
