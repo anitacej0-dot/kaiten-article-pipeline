@@ -118,8 +118,8 @@ kaiten-article-pipeline/
 2. ✅ **Рубрика в `templates/ai_review.md`** — 11 критериев, 3 слоя, формат отчёта.
 3. ✅ **`CLAUDE.md`** — корневая инструкция: принципы, этапы, gate'ы, как запускать.
 4. ✅ **Навык `make-brief`** — сборка ТЗ из базы знаний (закрывает слабые ТЗ).
-5. **Навык `research-article`** — закрывает отсутствие research-этапа.
-6. **Навыки `build-outline`, `ai-pre-review`, `package-for-cms`**.
+5. ✅ **Навык `research-article`** — research-этап с артефактом.
+6. ✅ **Навыки `build-outline`, `ai-pre-review`, `package-for-cms`** — слой `skills/` собран (5 навыков).
 7. **Новые knowledge-файлы** (`target-keywords`, `internal-links-map`) + дополнение `seo_policy`.
 8. **Пилот:** 5–10 типовых SEO-статей с большой ручной редактурой, замер метрик.
 
