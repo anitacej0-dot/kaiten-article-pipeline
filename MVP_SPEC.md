@@ -50,6 +50,11 @@
 | `package-for-cms` | 8 | seo_policy | cms_package |
 | `product-fact-check` (сквозной) | 2, 5 | products, forbidden_phrases | — (references/) |
 | `make-cover` (иллюстрации) | 8 | editorial_policy | assets/ (4 фона) |
+| `kaiten-editorial` (сквозной) | 4, 5, 7 | editorial_policy, forbidden_phrases, products | — (свои references/) |
+| `product-roundup-v2` (под ключ, подборки) | 1–5, 8 | products, seo_policy | — (свои references/) |
+
+> Навыки `kaiten-editorial` и `product-roundup-v2` дублируют часть `knowledge/` в своих
+> `references/`. Единый источник истины — `knowledge/`; со временем свести дубли.
 
 > Команды-обёртки (slash) по образцу SEOMachine: `/intake`, `/brief`, `/research`,
 > `/outline`, `/ai-review`, `/cms`.
