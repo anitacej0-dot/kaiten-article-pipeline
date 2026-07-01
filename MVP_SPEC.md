@@ -48,6 +48,8 @@
 | `build-outline` | 3 | seo_policy, editorial_policy, good_examples | outline |
 | `ai-pre-review` | 5 | editorial_policy, forbidden_phrases, bad_patterns, products, good_examples | ai_review |
 | `package-for-cms` | 8 | seo_policy | cms_package |
+| `product-fact-check` (сквозной) | 2, 5 | products, forbidden_phrases | — (references/) |
+| `make-cover` (иллюстрации) | 8 | editorial_policy | assets/ (4 фона) |
 
 > Команды-обёртки (slash) по образцу SEOMachine: `/intake`, `/brief`, `/research`,
 > `/outline`, `/ai-review`, `/cms`.
