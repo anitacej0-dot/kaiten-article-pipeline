@@ -59,12 +59,12 @@ AI делает первые ~60%, человек отвечает за стра
 
 ### 02_research.md — Research
 1. **Skill:** `research-article` (+ `product-fact-check` для продуктовых фактов и конкурентов).
-2. **Читает:** `01_brief.md`, `knowledge/products`, `icp_segments`, выдачу/конкурентов.
+2. **Читает:** `01_brief.md`, `knowledge/products` + **официальную базу знаний Kaiten [faq-ru.kaiten.site](https://faq-ru.kaiten.site/)** для сверки продуктовых фактов, `icp_segments`, выдачу/конкурентов.
 3. **Создаёт:** `02_research.md`.
 4. **Готово:** источники (required/optional), конкуренты и их слабые места, вопросы читателя, FAQ, продуктовые факты и границы, внутренние ссылки, вывод «можно ли к outline».
 5. **Стоп:** нет источников / структура не отвечает интенту → не идти к outline.
 6. **Дальше:** research закрыл интент и продуктовые границы → `build-outline`.
-7. **Нельзя пропускать:** выдуманные факты/цифры; неверные продуктовые утверждения (Kaiten — только из `products.md`).
+7. **Нельзя пропускать:** выдуманные факты/цифры; неверные продуктовые утверждения (факты о Kaiten — из `products.md` со сверкой по [faq-ru.kaiten.site](https://faq-ru.kaiten.site/)).
 
 ### 03_outline.md — Outline · 🛑 STOP 2
 1. **Skill:** `build-outline`.
