@@ -1,14 +1,14 @@
 # Pipeline status — Лучшие корпоративные мессенджеры
 
-> Статус по `workflows/seo_article_pipeline.md`. Сейчас — 🛑 STOP 1 (ждём решения редактора).
+> Статус по `workflows/seo_article_pipeline.md`. Сейчас — 🛑 STOP 2 (outline на одобрение).
 
 | Этап | Файл | Статус | Кто проверяет | Решение | Комментарий |
 | --- | --- | --- | --- | --- | --- |
 | Intake | `00_intake.md` | готово | редактор | — | ТЗ перенесено, поля заполнены |
 | Brief | `01_brief.md` | готово | — | — | угол «защищённый рабочий контур» |
-| 🛑 Brief review (STOP 1) | `01_brief_review.md` | на проверке | редактор | **APPROVED 91** | ждём решения редактора |
-| Research | `02_research.md` | не начато | — | — | research-article + product-fact-check |
-| 🛑 Outline (STOP 2) | `03_outline.md` | не начато | редактор | — | |
+| 🛑 Brief review (STOP 1) | `01_brief_review.md` | готово | редактор | **APPROVED (одобрен)** | STOP 1 пройден |
+| Research | `02_research.md` | готово | — | — | выдача + факты по 13 сервисам (проверить на офсайтах) |
+| 🛑 Outline (STOP 2) | `03_outline.md` | на проверке | редактор | — | ждём одобрения перед черновиком |
 | 🛑 Draft (STOP 3) | `04_draft.md` | не начато | редактор | — | подборка: возможен product-roundup-v2 |
 | Editorial review | `05_editorial_review.md` | не начато | редактор | — | |
 | 🛑 Article score (STOP 4) | `06_article_score.md` | не начато | ai-pre-review + редактор | — | <90 → revision; 90+ → publication |
