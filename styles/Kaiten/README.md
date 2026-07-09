@@ -18,6 +18,7 @@
 | Cliches.yml | existence | warning | журналистские штампы |
 | Intensifiers.yml | existence | suggestion | самый/наиболее/лучший без факта |
 | SentenceLength.yml | metric | warning | среднее предложение > 15 слов |
+| NoYo.yml | existence | error (HARD) | буква «ё» — не используем нигде |
 
 ## Важно про русский
 Регулярочные проверки (existence, substitution, occurrence, metric) **языконезависимы** —

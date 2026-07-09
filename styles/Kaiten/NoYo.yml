@@ -1,0 +1,6 @@
+extends: existence
+message: "Буква «ё» — по редполитике Kaiten не используется. Замените на «е»."
+level: error
+ignorecase: true
+tokens:
+  - 'ё'
