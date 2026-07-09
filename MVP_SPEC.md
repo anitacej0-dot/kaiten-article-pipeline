@@ -43,7 +43,9 @@
 
 | Навык | Этап | Использует knowledge/ | Использует templates/ |
 | --- | --- | --- | --- |
-| `make-brief` | 1 | seo_policy, products, icp_segments, editorial_policy | intake_card, article_brief |
+| `brief-architect` | 1 | article_patterns, editorial_corrections_patterns, weak_article_antipatterns, seo_policy, icp_segments, products | brief_template |
+| `brief-reviewer` | 1 (gate) | editorial_policy, weak_article_antipatterns, seo_policy | brief_review_template |
+| `make-brief` (облегчённый, legacy) | 1 | seo_policy, products, icp_segments, editorial_policy | intake_card, article_brief |
 | `research-article` | 2 | products, icp_segments | research_report |
 | `build-outline` | 3 | seo_policy, editorial_policy, good_examples | outline |
 | `ai-pre-review` | 5 | editorial_policy, forbidden_phrases, bad_patterns, products, good_examples | ai_review |
