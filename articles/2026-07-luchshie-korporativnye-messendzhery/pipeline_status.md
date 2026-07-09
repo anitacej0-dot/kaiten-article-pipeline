@@ -13,7 +13,7 @@
 | Editorial review | `05_editorial_review.md` | готово | ai-pre-review + редактор | ✅ к скорингу | HARD чисто; 1 HIGH (фактчек офсайтов), 4 MEDIUM, 3 LOW |
 | Product fact-check | `05_product_factcheck.md` | готово | product-fact-check | ⚠️ найдены ошибки | 4 🔴 (Compass, VK, Битрикс, Яндекс), + 🟡/🟢/⚪ по офсайтам на 2026-07-09 |
 | Revision task | `07_revision_task.md` | готово | редактор | — | ТЗ на правки: 4 🔴 + 🟡/🟢/⚪ из фактчека и редактуры |
-| Revised draft (v3.1) | `08_revised_draft.md` | готово | автор | на проверке | правки фактчека + фокус смещён с ВКС на мессенджер; ⚠️-пункты закрыты |
+| Revised draft (v4) | `08_revised_draft.md` | готово | автор | на проверке | пересобраны все 13 описаний против нейро-шлака; подзаголовки единые; Битрикс24 — по офсайту чата |
 | 🛑 Rescore (STOP 4) | `09_rescore.md` | готово | ai-pre-review | **92/100 — PASS** | 90+; 2 условия до публикации (⚠️-факты + русские сервисы) |
 | Publication pack | `10_publication_pack.md` | готово | package-for-cms | ✅ собран | H1/Title/Desc/slug, ключи, перелинковка, CTA, визуал-рекомендации; чек-лист публикации |
 | Visual brief | `11_visual_brief.md` | готово | visual-producer | ✅ собран | обложка, схема разницы, таблица, скрин Kaiten; политика скриншотов конкурентов |
