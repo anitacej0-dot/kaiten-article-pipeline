@@ -1,0 +1,211 @@
+<style>
+  :root{
+    --surface:#ffffff; --section:#f7f6f9; --text:#2D2D2D; --muted:#757575;
+    --border:#E4E1EA; --accent:#7D4CCF; --accent-soft:#EFE9F9;
+    --yes-t:#1E7A46; --yes-b:#E6F4EC;
+    --no-t:#6B6B6B;  --no-b:#ECEAEF;
+    --warn-t:#8A5A00; --warn-b:#F8EFDD;
+    --neu-t:#5B3AA6; --neu-b:#EFE9F9;
+    --shadow:0 1px 2px rgba(20,16,40,.04), 0 8px 24px rgba(20,16,40,.06);
+    --font:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --surface:#1b1a1f; --section:#201e26; --text:#ECEAF0; --muted:#A7A3B0;
+      --border:#332F3B; --accent:#B79AF0; --accent-soft:#2A2440;
+      --yes-t:#83D3A6; --yes-b:#15301F;
+      --no-t:#B4B0BB;  --no-b:#2A2831;
+      --warn-t:#E6BC73; --warn-b:#382C17;
+      --neu-t:#C9B8F2; --neu-b:#2A2440;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --surface:#ffffff; --section:#f7f6f9; --text:#2D2D2D; --muted:#757575;
+    --border:#E4E1EA; --accent:#7D4CCF; --accent-soft:#EFE9F9;
+    --yes-t:#1E7A46; --yes-b:#E6F4EC; --no-t:#6B6B6B; --no-b:#ECEAEF;
+    --warn-t:#8A5A00; --warn-b:#F8EFDD; --neu-t:#5B3AA6; --neu-b:#EFE9F9;
+    --shadow:0 1px 2px rgba(20,16,40,.04), 0 8px 24px rgba(20,16,40,.06);
+  }
+  :root[data-theme="dark"]{
+    --surface:#1b1a1f; --section:#201e26; --text:#ECEAF0; --muted:#A7A3B0;
+    --border:#332F3B; --accent:#B79AF0; --accent-soft:#2A2440;
+    --yes-t:#83D3A6; --yes-b:#15301F; --no-t:#B4B0BB; --no-b:#2A2831;
+    --warn-t:#E6BC73; --warn-b:#382C17; --neu-t:#C9B8F2; --neu-b:#2A2440;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  .kt-wrap{font-family:var(--font); color:var(--text); max-width:1060px; margin:0 auto; padding:28px 20px 40px; -webkit-font-smoothing:antialiased;}
+  .kt-eyebrow{font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  .kt-title{font-size:26px; line-height:1.2; font-weight:600; letter-spacing:-.01em; margin:0 0 6px; text-wrap:balance;}
+  .kt-sub{font-size:14px; color:var(--muted); margin:0 0 20px;}
+
+  .kt-card{background:var(--surface); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); overflow:hidden;}
+  .kt-scroll{overflow-x:auto;}
+  table.kt{border-collapse:collapse; width:100%; min-width:860px; font-size:13.5px; font-variant-numeric:tabular-nums;}
+  table.kt thead th{
+    background:var(--accent-soft); color:var(--accent); font-weight:600;
+    font-size:11px; letter-spacing:.06em; text-transform:uppercase; text-align:left;
+    padding:14px 16px; border-bottom:1px solid var(--border); white-space:nowrap; vertical-align:middle;
+  }
+  table.kt tbody td{padding:13px 16px; border-bottom:1px solid var(--border); color:var(--text); vertical-align:middle;}
+  table.kt tbody tr:nth-child(even){background:var(--section);}
+  table.kt tbody tr:last-child td{border-bottom:none;}
+  td.kt-name{font-weight:600; white-space:nowrap;}
+  td.kt-role{color:var(--muted); min-width:190px;}
+  td .sub{display:block; color:var(--muted); font-size:11.5px; margin-top:3px; font-weight:400;}
+  td.kt-price{white-space:nowrap;}
+
+  .pill{display:inline-flex; align-items:center; gap:6px; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; line-height:1.4; white-space:nowrap;}
+  .pill::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor; opacity:.85;}
+  .pill.yes{color:var(--yes-t); background:var(--yes-b);}
+  .pill.no{color:var(--no-t); background:var(--no-b);}
+  .pill.warn{color:var(--warn-t); background:var(--warn-b);}
+  .pill.neu{color:var(--neu-t); background:var(--neu-b);}
+
+  .kt-legend{display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; margin:16px 2px 0; font-size:12px; color:var(--muted);}
+  .kt-note{margin:14px 2px 0; font-size:12px; color:var(--muted); line-height:1.5;}
+  @media (max-width:560px){ .kt-title{font-size:22px;} }
+</style>
+
+<div class="kt-wrap">
+  <p class="kt-eyebrow">Сравнение</p>
+  <h2 class="kt-title">Аналоги Notion в России</h2>
+  <p class="kt-sub">12 сервисов для заметок, базы знаний и задач · данные на 13 июля 2026</p>
+
+  <div class="kt-card">
+    <div class="kt-scroll">
+      <table class="kt">
+        <thead>
+          <tr>
+            <th scope="col">Сервис</th>
+            <th scope="col">Что заменяет</th>
+            <th scope="col">Рус. интерфейс</th>
+            <th scope="col">Оплата из РФ</th>
+            <th scope="col">Бесплатный тариф</th>
+            <th scope="col">Мин. цена</th>
+            <th scope="col">Коробка</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kt-name">Kaiten</td>
+            <td class="kt-role">база знаний, задачи и документы команды</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 5 пользователей</td>
+            <td class="kt-price">от 185 ₽/польз. в мес</td>
+            <td><span class="pill yes">да</span><span class="sub">на «Корпорации»</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Yonote</td>
+            <td class="kt-role">страницы и базы данных, ближе всего к Notion</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 5 пользователей</td>
+            <td class="kt-price">249 ₽/польз. в мес</td>
+            <td><span class="pill yes">да</span><span class="sub">свой сервер</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">WEEEK</td>
+            <td class="kt-role">база знаний, задачи и CRM</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 5 участников</td>
+            <td class="kt-price">от 199 ₽/польз. в мес</td>
+            <td><span class="pill no">нет</span><span class="sub">только облако</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">TEAMLY</td>
+            <td class="kt-role">база знаний, обучение и умные таблицы</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 5 редакторов</td>
+            <td class="kt-price">299 ₽/редактор в мес</td>
+            <td><span class="pill yes">да</span><span class="sub">on-premise</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">EvaWiki</td>
+            <td class="kt-role">база знаний, замена Confluence</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>«Коробка Старт», 0 ₽</td>
+            <td class="kt-price">250 ₽/польз. в мес</td>
+            <td><span class="pill yes">да</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">YouGile</td>
+            <td class="kt-role">задачи и канбан с чатами</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 10 пользователей</td>
+            <td class="kt-price">594 ₽/польз. в мес</td>
+            <td><span class="pill yes">да</span><span class="sub">свой сервер</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Strive</td>
+            <td class="kt-role">задачи, документы и регламенты</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td>до 10 пользователей</td>
+            <td class="kt-price">250 ₽/польз. (от 15 чел)</td>
+            <td><span class="pill yes">да</span><span class="sub">Strive BOX</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Яндекс Wiki</td>
+            <td class="kt-role">база знаний в Яндекс 360</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill no">нет</span><span class="sub">для бизнеса</span></td>
+            <td class="kt-price">319 ₽/сотр. за весь 360</td>
+            <td><span class="pill yes">да</span><span class="sub">on-premise</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Obsidian</td>
+            <td class="kt-role">личные заметки и граф связей</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span><span class="sub">ядро без оплаты</span></td>
+            <td>да, само приложение</td>
+            <td class="kt-price">Sync от 4 $ в мес</td>
+            <td><span class="pill neu">локально</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Milanote</td>
+            <td class="kt-role">визуальные доски для креатива</td>
+            <td><span class="pill no">нет</span></td>
+            <td><span class="pill warn">не подтверждено</span></td>
+            <td>да, лимит 100 элементов</td>
+            <td class="kt-price">9,99 $ в мес</td>
+            <td><span class="pill no">нет</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">AppFlowy</td>
+            <td class="kt-role">open-source рабочее пространство</td>
+            <td><span class="pill yes">да</span><span class="sub">силами сообщества</span></td>
+            <td><span class="pill yes">да</span><span class="sub">свой сервер без оплаты</span></td>
+            <td>да</td>
+            <td class="kt-price">Pro 10 $/польз. в мес</td>
+            <td><span class="pill yes">да</span><span class="sub">свой сервер</span></td>
+          </tr>
+          <tr>
+            <td class="kt-name">Google Keep</td>
+            <td class="kt-role">быстрые заметки и списки</td>
+            <td><span class="pill yes">да</span></td>
+            <td><span class="pill yes">да</span><span class="sub">личная версия</span></td>
+            <td>да</td>
+            <td class="kt-price">—</td>
+            <td><span class="pill no">нет</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="kt-legend">
+    <span class="pill yes">да</span>
+    <span class="pill no">нет</span>
+    <span class="pill warn">не подтверждено</span>
+    <span class="pill neu">локально</span>
+  </div>
+  <p class="kt-note">Тарифы указаны минимальные, проверены по официальным сайтам сервисов 13 июля 2026 года и могут измениться. Порядок сервисов в таблице не означает оценку качества.</p>
+</div>

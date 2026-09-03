@@ -1,0 +1,40 @@
+<svg width="100%" viewBox="0 0 720 220" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Три типа CRM по задаче</title>
+<desc>Операционная CRM — вести сделки и не терять заявки. Аналитическая CRM — считать и видеть, что приносит деньги. Коллаборационная CRM — связывать отделы вокруг клиента.</desc>
+<rect width="720" height="220" fill="#ffffff"/>
+
+<!-- Операционная -->
+<g>
+  <rect x="12" y="16" width="224" height="188" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <path d="M100 52 L148 52 L132 78 L132 94 L116 94 L116 78 Z" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="124" y="132" text-anchor="middle" font-size="16" font-weight="600" fill="#2d2d2d">Операционная</text>
+  <text x="124" y="160" text-anchor="middle" font-size="12.5" fill="#757575">вести сделки</text>
+  <text x="124" y="178" text-anchor="middle" font-size="12.5" fill="#757575">и не терять заявки</text>
+</g>
+
+<!-- Аналитическая -->
+<g>
+  <rect x="248" y="16" width="224" height="188" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <line x1="338" y1="94" x2="382" y2="94" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="342" y="76" width="9" height="18" rx="2" fill="#bdbdbd"/>
+  <rect x="355" y="60" width="9" height="34" rx="2" fill="#7d4ccf"/>
+  <rect x="368" y="70" width="9" height="24" rx="2" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <text x="360" y="132" text-anchor="middle" font-size="16" font-weight="600" fill="#2d2d2d">Аналитическая</text>
+  <text x="360" y="160" text-anchor="middle" font-size="12.5" fill="#757575">считать и видеть,</text>
+  <text x="360" y="178" text-anchor="middle" font-size="12.5" fill="#757575">что приносит деньги</text>
+</g>
+
+<!-- Коллаборационная -->
+<g>
+  <rect x="484" y="16" width="224" height="188" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <line x1="582" y1="64" x2="610" y2="64" stroke="#7d4ccf" stroke-width="1.5"/>
+  <line x1="582" y1="64" x2="596" y2="90" stroke="#7d4ccf" stroke-width="1.5"/>
+  <line x1="610" y1="64" x2="596" y2="90" stroke="#7d4ccf" stroke-width="1.5"/>
+  <circle cx="582" cy="64" r="8" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <circle cx="610" cy="64" r="8" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <circle cx="596" cy="90" r="8" fill="#7d4ccf"/>
+  <text x="596" y="132" text-anchor="middle" font-size="16" font-weight="600" fill="#2d2d2d">Коллаборационная</text>
+  <text x="596" y="160" text-anchor="middle" font-size="12.5" fill="#757575">связывать отделы</text>
+  <text x="596" y="178" text-anchor="middle" font-size="12.5" fill="#757575">вокруг клиента</text>
+</g>
+</svg>
