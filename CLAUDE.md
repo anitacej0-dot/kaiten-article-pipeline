@@ -14,8 +14,21 @@
 - `skills/` — навыки по этапам (`brief-architect`, `brief-reviewer`, `research-article`, …).
 - `.claude/skills/` — навыки визуального этапа: `design-system-kaiten-v01` (источник истины по стилю) и `visual-producer-kaiten`.
 - `articles/ГГГГ-ММ-тема/` — рабочие файлы конкретной статьи (артефакты 00–12).
+- `workflows/` — сквозные конвейеры по типам статей.
+- `tools/` — вспомогательные скрипты (например, `pdf_extract.py` для разбора PDF).
 
-## Конвейер: этапы и артефакты
+## Типы статей
+
+В репозитории два конвейера. Они не пересекаются — выбирай по типу материала.
+
+| Тип | Когда | Конвейер |
+| --- | --- | --- |
+| SEO-статья (по умолчанию) | тема из контент-плана, есть интент и ключи | [`workflows/seo_article_pipeline.md`](workflows/seo_article_pipeline.md) |
+| `monthly_product_updates` | ежемесячный обзор обновлений Кайтена по внутреннему PDF | [`workflows/monthly_updates_pipeline.md`](workflows/monthly_updates_pipeline.md) |
+
+Всё, что ниже до раздела «Ежемесячный обзор обновлений», относится к **SEO-статьям**.
+
+## Конвейер SEO-статьи: этапы и артефакты
 
 MVP = **SEO-статья в блог**. Кейсы и экспертные статьи в пилот не входят.
 
@@ -110,3 +123,35 @@ B2B/SaaS-стиль, фиолетовый `#7D4CCF` как единственн�
 8. Картинки генерируются **только из `13_image_generation_queue.md` и только по отдельной команде редактора**.
 
 Статус статьи ведётся в её `pipeline_status.md` (шаблон — `templates/pipeline_status_template.md`).
+
+## Ежемесячный обзор обновлений (`monthly_product_updates`)
+
+Второй тип статьи. **Это не SEO-статья:** нет интента, ключей, брифа и скоринга.
+Материал выходит раз в месяц и пишется по внутреннему PDF с фактурой о релизах.
+Полный цикл — [`workflows/monthly_updates_pipeline.md`](workflows/monthly_updates_pipeline.md),
+редакционные правила формата — [`knowledge/monthly_updates_style_guide.md`](knowledge/monthly_updates_style_guide.md).
+
+**Источник истины — приложенный PDF.** Внешний ресёрч по фактуре запрещён по умолчанию.
+Нельзя придумывать функции, ограничения, тарифы, сценарии, цифры, даты, ссылки и
+технические возможности. Не хватает данных — `[НУЖНО УТОЧНИТЬ: вопрос]`, а не догадка.
+
+Навыки: `monthly-updates-source` (разбор PDF и реестр обновлений) →
+`monthly-updates-writer` (структура, черновик, манифест картинок) →
+`monthly-updates-qa` (сверка статьи с источником). Тон — сквозной `kaiten-editorial`,
+вычитка — `ai-pre-review`, упаковка — `package-for-cms`.
+
+Порядок для нового месяца:
+
+1. Создать папку `articles/YYYY-MM-obnovleniya-<месяц>/` (копией `articles/_MONTHLY_UPDATES_FOLDER_TEMPLATE/`).
+2. Заполнить `00_intake.md` по `templates/monthly_updates_intake_template.md`.
+3. Прогнать PDF: `python tools/pdf_extract.py --pdf "<файл>" --out "articles/<папка>" --render-pages`.
+4. `monthly-updates-source` → `02_source_facts.md` (полный реестр обновлений, major/minor).
+5. `monthly-updates-writer` → `03_outline.md`. **🛑 STOP 1** — редактор утверждает H1, описание под заголовком и деление обновлений.
+6. Черновик → `04_draft.md`. **🛑 STOP 2** — редактор смотрит текст.
+7. Вычитка → `05_editorial_review.md`, манифест картинок → `06_image_manifest.md`.
+8. `monthly-updates-qa` → `07_qa_report.md`. **🛑 STOP 3** — `Unsupported claims: 0` и ни одного потерянного обновления.
+9. Упаковка → `08_publication_pack.md`.
+
+Картинки берутся **из PDF**, а не рисуются: `visual-producer-kaiten` и генерация
+изображений в этом конвейере не участвуют. Нет скриншота — раздел выходит без картинки,
+а в манифесте появляется запрос скриншота у продуктовой команды.
