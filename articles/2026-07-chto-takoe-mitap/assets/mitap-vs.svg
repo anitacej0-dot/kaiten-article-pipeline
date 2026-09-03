@@ -1,0 +1,63 @@
+<svg width="100%" viewBox="0 0 720 260" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Митап, вебинар, конференция и семинар: в чем разница</title>
+<desc>Четыре карточки-формата с иконками, кто с кем говорит. Митап — на равных, вебинар — один многим онлайн, конференция — крупно и формально, семинар — обучение в группе.</desc>
+<rect width="720" height="260" fill="#ffffff"/>
+
+<!-- Митап (акцент) -->
+<g>
+  <rect x="12" y="28" width="168" height="204" rx="16" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/>
+  <text x="96" y="58" text-anchor="middle" font-size="15" font-weight="600" fill="#7d4ccf">Митап</text>
+  <!-- ring of peers -->
+  <g stroke="#7d4ccf" stroke-width="1.5" fill="none">
+    <path d="M96 92 L122 118"/><path d="M122 118 L96 144"/><path d="M96 144 L70 118"/><path d="M70 118 L96 92"/>
+    <path d="M96 92 L96 144"/><path d="M70 118 L122 118"/>
+  </g>
+  <circle cx="96" cy="92" r="6" fill="#7d4ccf"/>
+  <circle cx="122" cy="118" r="6" fill="#7d4ccf"/>
+  <circle cx="96" cy="144" r="6" fill="#7d4ccf"/>
+  <circle cx="70" cy="118" r="6" fill="#7d4ccf"/>
+  <text x="96" y="196" text-anchor="middle" font-size="12" fill="#757575">на равных,</text>
+  <text x="96" y="212" text-anchor="middle" font-size="12" fill="#757575">все со всеми</text>
+</g>
+
+<!-- Вебинар -->
+<g>
+  <rect x="192" y="28" width="168" height="204" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="276" y="58" text-anchor="middle" font-size="15" font-weight="600" fill="#2d2d2d">Вебинар</text>
+  <rect x="256" y="86" width="40" height="26" rx="5" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1.5"/>
+  <circle cx="276" cy="99" r="5" fill="#bdbdbd"/>
+  <g stroke="#e0e0e0" stroke-width="1.5"><path d="M276 112 L256 140"/><path d="M276 112 L276 140"/><path d="M276 112 L296 140"/></g>
+  <circle cx="256" cy="144" r="5" fill="#bdbdbd"/>
+  <circle cx="276" cy="144" r="5" fill="#bdbdbd"/>
+  <circle cx="296" cy="144" r="5" fill="#bdbdbd"/>
+  <text x="276" y="196" text-anchor="middle" font-size="12" fill="#757575">один → многим,</text>
+  <text x="276" y="212" text-anchor="middle" font-size="12" fill="#757575">онлайн</text>
+</g>
+
+<!-- Конференция -->
+<g>
+  <rect x="372" y="28" width="168" height="204" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="456" y="58" text-anchor="middle" font-size="15" font-weight="600" fill="#2d2d2d">Конференция</text>
+  <circle cx="456" cy="90" r="6" fill="#bdbdbd"/>
+  <rect x="438" y="102" width="36" height="4" rx="2" fill="#e0e0e0"/>
+  <g fill="#bdbdbd">
+    <circle cx="432" cy="124" r="4"/><circle cx="448" cy="124" r="4"/><circle cx="464" cy="124" r="4"/><circle cx="480" cy="124" r="4"/>
+    <circle cx="424" cy="140" r="4"/><circle cx="440" cy="140" r="4"/><circle cx="456" cy="140" r="4"/><circle cx="472" cy="140" r="4"/><circle cx="488" cy="140" r="4"/>
+  </g>
+  <text x="456" y="196" text-anchor="middle" font-size="12" fill="#757575">крупно и</text>
+  <text x="456" y="212" text-anchor="middle" font-size="12" fill="#757575">формально</text>
+</g>
+
+<!-- Семинар -->
+<g>
+  <rect x="552" y="28" width="168" height="204" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="636" y="58" text-anchor="middle" font-size="15" font-weight="600" fill="#2d2d2d">Семинар</text>
+  <circle cx="636" cy="92" r="6" fill="#bdbdbd"/>
+  <g stroke="#e0e0e0" stroke-width="1.5"><path d="M636 104 L618 134"/><path d="M636 104 L636 138"/><path d="M636 104 L654 134"/></g>
+  <circle cx="618" cy="138" r="5" fill="#bdbdbd"/>
+  <circle cx="636" cy="142" r="5" fill="#bdbdbd"/>
+  <circle cx="654" cy="138" r="5" fill="#bdbdbd"/>
+  <text x="636" y="196" text-anchor="middle" font-size="12" fill="#757575">обучение</text>
+  <text x="636" y="212" text-anchor="middle" font-size="12" fill="#757575">в группе</text>
+</g>
+</svg>

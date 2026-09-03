@@ -1,0 +1,47 @@
+<svg width="100%" viewBox="0 0 720 200" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Форматы митапов</title>
+<desc>Четыре формата: доклады — подробно по теме, lightning talks — коротко, панель — спор экспертов, воркшоп — делаем руками.</desc>
+<rect width="720" height="200" fill="#ffffff"/>
+
+<!-- Доклады -->
+<g>
+  <rect x="12" y="24" width="168" height="152" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="76" y="48" width="40" height="28" rx="4" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <rect x="83" y="55" width="26" height="4" rx="2" fill="#7d4ccf"/>
+  <rect x="83" y="63" width="18" height="4" rx="2" fill="#bdbdbd"/>
+  <text x="96" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Доклады</text>
+  <text x="96" y="138" text-anchor="middle" font-size="12" fill="#757575">подробно</text>
+  <text x="96" y="154" text-anchor="middle" font-size="12" fill="#757575">по теме</text>
+</g>
+
+<!-- Lightning talks -->
+<g>
+  <rect x="192" y="24" width="168" height="152" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <path d="M282 44 l-14 26 l10 0 l-6 22 l20 -30 l-10 0 l8 -18 z" fill="#7d4ccf"/>
+  <text x="276" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Lightning talks</text>
+  <text x="276" y="138" text-anchor="middle" font-size="12" fill="#757575">коротко,</text>
+  <text x="276" y="154" text-anchor="middle" font-size="12" fill="#757575">спикеров много</text>
+</g>
+
+<!-- Панель -->
+<g>
+  <rect x="372" y="24" width="168" height="152" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <circle cx="438" cy="60" r="7" fill="#bdbdbd"/>
+  <circle cx="456" cy="60" r="7" fill="#7d4ccf"/>
+  <circle cx="474" cy="60" r="7" fill="#bdbdbd"/>
+  <path d="M446 76 q10 8 20 0" fill="none" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="456" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Панель</text>
+  <text x="456" y="138" text-anchor="middle" font-size="12" fill="#757575">спор</text>
+  <text x="456" y="154" text-anchor="middle" font-size="12" fill="#757575">экспертов</text>
+</g>
+
+<!-- Воркшоп -->
+<g>
+  <rect x="552" y="24" width="168" height="152" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="624" y="46" width="20" height="20" rx="4" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <rect x="636" y="58" width="20" height="20" rx="4" fill="#ffffff" stroke="#7d4ccf" stroke-width="1.5"/>
+  <text x="636" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Воркшоп</text>
+  <text x="636" y="138" text-anchor="middle" font-size="12" fill="#757575">делаем</text>
+  <text x="636" y="154" text-anchor="middle" font-size="12" fill="#757575">руками</text>
+</g>
+</svg>

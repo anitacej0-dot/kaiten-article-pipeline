@@ -1,0 +1,65 @@
+<svg width="100%" viewBox="0 0 680 388" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Пример программы митапа на 2 часа</title>
+<desc>Тайминг вечернего митапа: сбор и приветствие, два доклада, перерыв, блиц-выступления, вопросы и нетворкинг.</desc>
+<rect width="680" height="388" fill="#ffffff"/>
+<text x="24" y="40" font-size="16" font-weight="600" fill="#2d2d2d">Пример программы митапа на 2 часа</text>
+
+<!-- вертикальная линия времени -->
+<line x1="150" y1="72" x2="150" y2="360" stroke="#e0e0e0" stroke-width="2"/>
+
+<!-- row 1 -->
+<rect x="24" y="71" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="88" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">18:30</text>
+<circle cx="150" cy="84" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="84" r="3" fill="#7d4ccf"/>
+<rect x="176" y="67" width="480" height="34" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="89" font-size="14" fill="#2d2d2d">Сбор и приветствие</text>
+<text x="640" y="89" text-anchor="end" font-size="13" fill="#757575">10 мин</text>
+
+<!-- row 2 -->
+<rect x="24" y="115" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="132" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">18:40</text>
+<circle cx="150" cy="128" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="128" r="3" fill="#7d4ccf"/>
+<rect x="176" y="111" width="480" height="34" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="133" font-size="14" fill="#2d2d2d">Доклад: основная тема</text>
+<text x="640" y="133" text-anchor="end" font-size="13" fill="#757575">25 мин</text>
+
+<!-- row 3 -->
+<rect x="24" y="159" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="176" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">19:05</text>
+<circle cx="150" cy="172" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="172" r="3" fill="#7d4ccf"/>
+<rect x="176" y="155" width="480" height="34" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="177" font-size="14" fill="#2d2d2d">Второй доклад</text>
+<text x="640" y="177" text-anchor="end" font-size="13" fill="#757575">25 мин</text>
+
+<!-- row 4 -->
+<rect x="24" y="203" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="220" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">19:30</text>
+<circle cx="150" cy="216" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="216" r="3" fill="#7d4ccf"/>
+<rect x="176" y="199" width="480" height="34" rx="10" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="221" font-size="14" fill="#757575">Перерыв и кофе</text>
+<text x="640" y="221" text-anchor="end" font-size="13" fill="#757575">10 мин</text>
+
+<!-- row 5 -->
+<rect x="24" y="247" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="264" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">19:40</text>
+<circle cx="150" cy="260" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="260" r="3" fill="#7d4ccf"/>
+<rect x="176" y="243" width="480" height="34" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="265" font-size="14" fill="#2d2d2d">Блиц-выступления</text>
+<text x="640" y="265" text-anchor="end" font-size="13" fill="#757575">20 мин</text>
+
+<!-- row 6 -->
+<rect x="24" y="291" width="96" height="26" rx="13" fill="#efe9f9"/>
+<text x="72" y="308" text-anchor="middle" font-size="13" font-weight="600" fill="#7d4ccf">20:00</text>
+<circle cx="150" cy="304" r="6" fill="#ffffff" stroke="#7d4ccf" stroke-width="2"/><circle cx="150" cy="304" r="3" fill="#7d4ccf"/>
+<rect x="176" y="287" width="480" height="34" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="192" y="309" font-size="14" fill="#2d2d2d">Вопросы и обсуждение</text>
+<text x="640" y="309" text-anchor="end" font-size="13" fill="#757575">15 мин</text>
+
+<!-- row 7 (акцент — нетворкинг) -->
+<rect x="24" y="335" width="96" height="26" rx="13" fill="#7d4ccf"/>
+<text x="72" y="352" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">20:15</text>
+<circle cx="150" cy="348" r="6" fill="#7d4ccf"/>
+<rect x="176" y="331" width="480" height="34" rx="10" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+<text x="192" y="353" font-size="14" font-weight="600" fill="#7d4ccf">Нетворкинг и общение</text>
+<text x="640" y="353" text-anchor="end" font-size="13" fill="#7d4ccf">15+ мин</text>
+</svg>
