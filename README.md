@@ -4,13 +4,14 @@
 отвечает за качество. Как работать в репозитории — [CLAUDE.md](CLAUDE.md),
 чертёж пилота — [MVP_SPEC.md](MVP_SPEC.md).
 
-## Три конвейера
+## Четыре конвейера
 
 | Тип статьи | Когда | Документ |
 | --- | --- | --- |
 | SEO-статья (MVP) | тема из контент-плана, есть интент и ключи | [`workflows/seo_article_pipeline.md`](workflows/seo_article_pipeline.md) |
 | `monthly_product_updates` | ежемесячный обзор обновлений Кайтена по внутреннему PDF | [`workflows/monthly_updates_pipeline.md`](workflows/monthly_updates_pipeline.md) |
 | `case_rewrite` | кейс клиента вышел на сторонней площадке, дублируем рерайтом в блог | [`workflows/case_rewrite_pipeline.md`](workflows/case_rewrite_pipeline.md) |
+| `executive_news` | новость компании для внешней площадки Executive.ru | [`workflows/executive_news_pipeline.md`](workflows/executive_news_pipeline.md) |
 
 ## Быстрый старт
 
@@ -41,11 +42,24 @@ python tools/pdf_extract.py --pdf "Обновления август _ Kaiten.pd
 perl tools/shingle_check.pl articles/<папка>/03_draft.md articles/<папка>/01_source_text.md
 ```
 
+**Новость для Executive.ru:** скопировать `external_platforms/e-xecutive/_NEWS_FOLDER_TEMPLATE/`
+в `external_platforms/e-xecutive/news/YYYY-MM-тема/`, заполнить `00_intake.md` и запустить
+навык `executive-news`. Сначала он проверяет повод по правилам площадки (событие не старше
+трех дней, без повторов), потом собирает реестр фактов, черновик, QA и пакет для отправки.
+Проверка формата черновика:
+
+```bash
+perl tools/news_check.pl external_platforms/e-xecutive/news/<папка>/02_draft.md
+```
+
+Пример — [`external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/`](external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/).
+
 ## Структура
 
 - `knowledge/` — база знаний: редполитика, продукт, ICP, SEO, чёрный список, паттерны статей.
+- `external_platforms/` — внешние площадки: правила, эталоны, шаблоны и материалы по каждой.
 - `templates/` — шаблоны артефактов каждого этапа.
-- `skills/` — навыки по этапам обоих конвейеров.
+- `skills/` — навыки по этапам всех конвейеров.
 - `.claude/skills/` — навыки визуального этапа (дизайн-система, visual producer).
 - `workflows/` — сквозные конвейеры по типам статей.
 - `tools/` — вспомогательные скрипты.
