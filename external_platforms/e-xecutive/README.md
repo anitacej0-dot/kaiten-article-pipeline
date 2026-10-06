@@ -13,13 +13,15 @@
 
 - [`platform_rules.md`](platform_rules.md) — правила площадки и наш формат: типы новостей,
   заголовок, анонс, текст, ссылка, теги. **Читать первым.**
-- [`examples.md`](examples.md) — семь опубликованных новостей Кайтена с разбором: что
-  повторяем, чего нет.
+- [`examples.md`](examples.md) — примеры: разбор опубликованных новостей Кайтена и таблица
+  новостей, прошедших конвейер. Полные тексты — в [`examples/`](examples/), по файлу на
+  новость. Каждая опубликованная новость пополняет эту папку.
 - [`_NEWS_FOLDER_TEMPLATE/`](_NEWS_FOLDER_TEMPLATE/) — шаблон папки одной новости.
-- `news/ГГГГ-ММ-тема/` — рабочие папки новостей.
+- [`news/`](news/) — рабочие папки новостей: `news/ГГГГ-ММ-тема/`, файлы этапов `00`–`10`.
 
-Навык — [`executive-news`](../../skills/executive-news/SKILL.md), конвейер —
-[`workflows/executive_news_pipeline.md`](../../workflows/executive_news_pipeline.md).
+Путь новости тот же, что у статьи блога. Навык — [`executive-news`](../../skills/executive-news/SKILL.md),
+конвейер — [`workflows/executive_news_pipeline.md`](../../workflows/executive_news_pipeline.md),
+шаблоны этапов — `templates/executive_news_*.md`.
 
 ## Коротко о правилах
 

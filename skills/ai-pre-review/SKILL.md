@@ -20,6 +20,14 @@ description: Прогоняет черновик статьи Kaiten через 
 4. Self-refine: после правок прогнать повторно, пока high не закрыты.
 5. Заполни отчёт по формату из `templates/ai_review.md`, сохрани в `05_ai_review.md`.
 
+## Новости для внешних площадок
+
+Для новостей Executive.ru (`workflows/executive_news_pipeline.md`) рубрика другая —
+`templates/executive_news_score.md`: 10 критериев, механика через `tools/news_check.pl` и
+`vale_lite.pl`, сверка каждого утверждения с `02_research.md` (`Unsupported claims`). Файлы
+те же, что у статьи: `05_editorial_review.md`, `06_article_score.md`, `09_rescore.md`. Порог —
+те же 90 баллов.
+
 ## Gate (решение)
 - **Любой HARD ниже порога или Vale-error → «вернуть автору»** + список high-замечаний. К редактору НЕ уходит.
 - Все HARD пройдены → ✅ к редактору; SOFT — рекомендации.
