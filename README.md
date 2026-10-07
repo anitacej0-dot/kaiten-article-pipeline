@@ -36,23 +36,25 @@ python tools/pdf_extract.py --pdf "Обновления август _ Kaiten.pd
 публикацию дословно в `01_source_text.md`. Дальше — навыки `case-source` →
 `case-rewriter` → `case-qa` → `case-package` со стоп-точками для редактора.
 
-Самопроверка уникальности до прогона в text.ru:
+Самопроверка до прогона в text.ru — уникальность и прямые цитаты (в кейсе не меньше трех):
 
 ```bash
 perl tools/shingle_check.pl articles/<папка>/03_draft.md articles/<папка>/01_source_text.md
+perl tools/quote_check.pl articles/<папка>/03_draft.md articles/<папка>/01_source_text.md
 ```
 
 **Новость для Executive.ru:** скопировать `external_platforms/e-xecutive/_NEWS_FOLDER_TEMPLATE/`
 в `external_platforms/e-xecutive/news/YYYY-MM-тема/`, заполнить `00_intake.md` и запустить
-навык `executive-news`. Сначала он проверяет повод по правилам площадки (событие не старше
-трех дней, без повторов), потом собирает реестр фактов, черновик, QA и пакет для отправки.
-Проверка формата черновика:
+навык `executive-news`. Путь тот же, что у статьи блога: бриф с проверкой повода и ревью
+(STOP 1) → research → структура (STOP 2) → черновик (STOP 3) → редактура и оценка
+`ai-pre-review` (STOP 4, нужно 90+) → публикационный пакет. Проверка формата черновика:
 
 ```bash
-perl tools/news_check.pl external_platforms/e-xecutive/news/<папка>/02_draft.md
+perl tools/news_check.pl external_platforms/e-xecutive/news/<папка>/04_draft.md
 ```
 
-Пример — [`external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/`](external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/).
+Примеры новостей Кайтена с полными текстами — [`external_platforms/e-xecutive/examples.md`](external_platforms/e-xecutive/examples.md),
+новость в работе — [`external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/`](external_platforms/e-xecutive/news/2026-10-issledovanie-pereryvy/).
 
 ## Структура
 
