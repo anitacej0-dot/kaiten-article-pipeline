@@ -14,9 +14,9 @@
 | 🛑 Draft (STOP 3) | `04_draft.md` | готово | редактор | approved | 2026-10-05: редактор пропустил к вычитке |
 | Editorial review | `05_editorial_review.md` | готово | ai-pre-review + независимый проверяющий | — | механика 0/0/0; 2 HIGH: шаблон «мало что…» ×6, сроки вопреки решению редактора |
 | 🛑 Article score (STOP 4) | `06_article_score.md` | на проверке | ai-pre-review + редактор | needs_revision (82/100) | <90 → revision: 07 → 08 → 09 |
-| Revision task | `07_revision_task.md` | не начато | редактор | — | |
-| Revised draft | `08_revised_draft.md` | не начато | автор | — | точечные правки |
-| Rescore | `09_rescore.md` | не начато | ai-pre-review | — | <90 → снова revision |
+| Revision task | `07_revision_task.md` | готово | ai-pre-review | — | 2026-10-07: 24 правки (2 🔴, 10 🟡, 12 🟢) по 05–06 |
+| Revised draft | `08_revised_draft.md` | готово | автор | — | все 🔴/🟡 закрыты; 16 433 знака (на уровне 04); vale_lite — HARD нет |
+| Rescore | `09_rescore.md` | готово | независимый проверяющий + vale_lite | approved (91/100) | HIGH нет; шлифовка внесена; до публикации — объем (+11%), «за полтора месяца», файл чек-листа, блюр |
 | Publication pack | `10_publication_pack.md` | не начато | package-for-cms | — | только после 90+ |
 | Visual brief | `11_visual_brief.md` | не начато | visual-producer | — | только после publication pack |
 | 🛑 Visual assets (STOP 5) | `12_visual_assets.md` | не начато | редактор | — | не генерировать всё подряд |
