@@ -17,7 +17,7 @@
 | Revision task | `07_revision_task.md` | готово | ai-pre-review | — | 2026-10-07: 24 правки (2 🔴, 10 🟡, 12 🟢) по 05–06 |
 | Revised draft | `08_revised_draft.md` | готово | автор | — | все 🔴/🟡 закрыты; 16 433 знака (на уровне 04); vale_lite — HARD нет |
 | Rescore | `09_rescore.md` | готово | независимый проверяющий + vale_lite | approved (91/100) | HIGH нет; шлифовка внесена; до публикации — объем (+11%), «за полтора месяца», файл чек-листа, блюр |
-| Publication pack | `10_publication_pack.md` | не начато | package-for-cms | — | только после 90+ |
+| Publication pack | `10_publication_pack.md` | на проверке | package-for-cms + редактор | — | 2026-10-07: пакет + файл чек-листа (assets/chek-list-vybora-crm.csv); ждем решений: объем, «полтора месяца», формат файла |
 | Visual brief | `11_visual_brief.md` | не начато | visual-producer | — | только после publication pack |
 | 🛑 Visual assets (STOP 5) | `12_visual_assets.md` | не начато | редактор | — | не генерировать всё подряд |
 | Image queue | `13_image_generation_queue.md` | не начато | редактор | — | генерация только по команде |
