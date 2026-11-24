@@ -1,0 +1,89 @@
+<svg width="100%" viewBox="0 0 780 276" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Путь релиза: шесть этапов и две линии работы</title>
+<desc>Шесть этапов в линию: планирование, подготовка, тестирование, решение Go / No-Go, развертывание и контроль. Под ними две линии работы: «Изменения» идут до развертывания, «Готовность» начинается в первый день и идет до контроля после выпуска.</desc>
+<rect width="780" height="276" fill="#ffffff"/>
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 1 L9 5 L0 9 z" fill="#bdbdbd"/>
+  </marker>
+</defs>
+
+<!-- направляющие от этапов к линиям работы -->
+<g stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="3 4">
+  <line x1="70" y1="94" x2="70" y2="118"/>
+  <line x1="198" y1="94" x2="198" y2="118"/>
+  <line x1="326" y1="94" x2="326" y2="118"/>
+  <line x1="454" y1="94" x2="454" y2="118"/>
+  <line x1="582" y1="94" x2="582" y2="118"/>
+  <line x1="710" y1="94" x2="710" y2="178"/>
+</g>
+
+<!-- стрелки между этапами -->
+<g stroke="#e0e0e0" stroke-width="2" marker-end="url(#arrow)">
+  <line x1="130" y1="56" x2="138" y2="56"/>
+  <line x1="258" y1="56" x2="266" y2="56"/>
+  <line x1="386" y1="56" x2="394" y2="56"/>
+  <line x1="514" y1="56" x2="522" y2="56"/>
+  <line x1="642" y1="56" x2="650" y2="56"/>
+</g>
+
+<!-- этапы -->
+<!-- 1. Планирование -->
+<g>
+  <rect x="12" y="20" width="116" height="72" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="70" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Планирование</text>
+  <text x="70" y="72" text-anchor="middle" font-size="11.5" fill="#757575">состав и план</text>
+</g>
+<!-- 2. Подготовка -->
+<g>
+  <rect x="140" y="20" width="116" height="72" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="198" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Подготовка</text>
+  <text x="198" y="72" text-anchor="middle" font-size="11.5" fill="#757575">материалы и откат</text>
+</g>
+<!-- 3. Тестирование -->
+<g>
+  <rect x="268" y="20" width="116" height="72" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="326" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Тестирование</text>
+  <text x="326" y="72" text-anchor="middle" font-size="11.5" fill="#757575">итоги проверок</text>
+</g>
+<!-- 4. Go / No-Go (акцент) -->
+<g>
+  <rect x="396" y="20" width="116" height="72" rx="16" fill="#7d4ccf"/>
+  <text x="454" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Go / No-Go</text>
+  <text x="454" y="72" text-anchor="middle" font-size="11.5" fill="#ffffff" fill-opacity="0.88">решение о выпуске</text>
+</g>
+<!-- 5. Развертывание -->
+<g>
+  <rect x="524" y="20" width="116" height="72" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="582" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Развертывание</text>
+  <text x="582" y="72" text-anchor="middle" font-size="11.5" fill="#757575">версия в среде</text>
+</g>
+<!-- 6. Контроль -->
+<g>
+  <rect x="652" y="20" width="116" height="72" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="710" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#2d2d2d">Контроль</text>
+  <text x="710" y="72" text-anchor="middle" font-size="11.5" fill="#757575">итоги выпуска</text>
+</g>
+
+<!-- линия 1: изменения — до развертывания -->
+<g>
+  <rect x="12" y="120" width="628" height="48" rx="12" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="28" y="141" font-size="14" font-weight="600" fill="#2d2d2d">Изменения</text>
+  <text x="28" y="158" font-size="12" fill="#757575">код, настройки, инфраструктура</text>
+</g>
+
+<!-- линия 2: готовность — с первого дня до контроля -->
+<g>
+  <rect x="12" y="180" width="756" height="48" rx="12" fill="#efe9f9" stroke="#7d4ccf" stroke-width="1.5"/>
+  <text x="28" y="201" font-size="14" font-weight="600" fill="#7d4ccf">Готовность</text>
+  <text x="28" y="218" font-size="12" fill="#7d4ccf">проверки, документация, поддержка, мониторинг, план отката</text>
+</g>
+
+<!-- бейдж: готовность начинается в первый день -->
+<g>
+  <path d="M40 232 L34 241 L46 241 Z" fill="#7d4ccf"/>
+  <rect x="12" y="240" width="186" height="24" rx="12" fill="#7d4ccf"/>
+  <text x="105" y="256" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">начинается в первый день</text>
+</g>
+</svg>

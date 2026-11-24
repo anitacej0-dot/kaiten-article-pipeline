@@ -1,0 +1,52 @@
+<svg width="100%" viewBox="0 0 680 383" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+<title>Обложка: Release Management — как организовать управление релизами в IT</title>
+<desc>Слева заголовок статьи. Справа карточка релиза 2.8 с линией прогресса и чек-листом готовности: три пункта отмечены, один ждет. В углу карточки — круглая метка Go.</desc>
+<rect width="680" height="383" fill="#ffffff"/>
+
+<!-- заголовок -->
+<rect x="44" y="96" width="56" height="6" rx="3" fill="#7d4ccf"/>
+<text x="44" y="158" font-size="46" font-weight="600" fill="#2d2d2d">Release</text>
+<text x="44" y="210" font-size="46" font-weight="600" fill="#2d2d2d">Management</text>
+<text x="44" y="252" font-size="19" fill="#757575">Как организовать</text>
+<text x="44" y="278" font-size="19" fill="#757575">управление релизами в IT</text>
+
+<!-- подложка -->
+<rect x="426" y="66" width="214" height="250" rx="24" fill="#efe9f9"/>
+
+<!-- карточка релиза -->
+<rect x="394" y="92" width="216" height="218" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+
+<!-- шапка карточки: номер версии и название -->
+<rect x="414" y="114" width="52" height="26" rx="13" fill="#7d4ccf"/>
+<text x="440" y="132" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">2.8</text>
+<rect x="476" y="122" width="84" height="10" rx="5" fill="#e0e0e0"/>
+
+<!-- линия прогресса -->
+<rect x="414" y="158" width="176" height="6" rx="3" fill="#eeeeee"/>
+<rect x="414" y="158" width="132" height="6" rx="3" fill="#7d4ccf"/>
+
+<!-- чек-лист: три пункта отмечены, один ждет -->
+<g>
+  <rect x="414" y="184" width="18" height="18" rx="5" fill="#7d4ccf"/>
+  <path d="M418.5 193.5 L422 197 L428 189.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="444" y="189" width="128" height="8" rx="4" fill="#e0e0e0"/>
+</g>
+<g>
+  <rect x="414" y="214" width="18" height="18" rx="5" fill="#7d4ccf"/>
+  <path d="M418.5 223.5 L422 227 L428 219.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="444" y="219" width="102" height="8" rx="4" fill="#e0e0e0"/>
+</g>
+<g>
+  <rect x="414" y="244" width="18" height="18" rx="5" fill="#7d4ccf"/>
+  <path d="M418.5 253.5 L422 257 L428 249.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="444" y="249" width="118" height="8" rx="4" fill="#e0e0e0"/>
+</g>
+<g>
+  <rect x="414.75" y="274.75" width="16.5" height="16.5" rx="4.5" fill="#ffffff" stroke="#bdbdbd" stroke-width="1.5"/>
+  <rect x="444" y="279" width="86" height="8" rx="4" fill="#eeeeee"/>
+</g>
+
+<!-- метка решения -->
+<circle cx="610" cy="92" r="31" fill="#7d4ccf" stroke="#ffffff" stroke-width="5"/>
+<text x="610" y="99" text-anchor="middle" font-size="20" font-weight="600" fill="#ffffff">Go</text>
+</svg>
